@@ -1,0 +1,348 @@
+body,
+a,
+p,
+h1,
+h2,
+h3,
+span,
+ul {
+  font-family: Open Sans, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a,
+a:active {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+}
+li {
+  list-style-type: none;
+}
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+} */
+
+/* Header */
+.header {
+  height: 100vh;
+  position: relative;
+  background-color: #000000;
+  background-image: url(../img/football_767.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #0a0e34;
+  opacity: 0.9;
+}
+.header-container {
+  position: relative;
+  z-index: 2;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo {
+  fill: #fff;
+  width: 135px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 135px;
+  padding-top: 30px;
+}
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 28px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.title-p2 {
+  margin-left: 45px;
+  margin-top: 20px;
+  margin-bottom: 85px;
+}
+.store-container {
+  width: 280px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.store-ios,
+.store-google {
+  background-color: #5e42b0;
+  border-radius: calc(35px / 2);
+}
+.store-link {
+  display: flex;
+  padding-left: 80px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  align-items: center;
+}
+.store-ios {
+  margin-bottom: 15px;
+}
+.store-ios-logo,
+.store-google-logo {
+  fill: #fff;
+  width: 22px;
+  height: 24px;
+  display: block;
+  margin-right: 10px;
+}
+.store-text {
+  display: block;
+  font-size: 8px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+}
+.store-text span {
+  display: block;
+  font-weight: 700;
+}
+
+/* Main content */
+.athlets-title-container {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 240px;
+}
+.athlets-title {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e7e7e7;
+}
+.athlets-imgbox {
+  position: absolute;
+  top: 80px;
+  left: 70px;
+}
+.athlets-post {
+  padding: 60px 20px 55px;
+}
+.athlets-post:nth-child(1) {
+  padding-top: 80px;
+  background-color: #fafafa;
+}
+.athlets-post:nth-child(2) {
+  background-color: #f5f4f9;
+}
+.athlets-post:nth-child(3) {
+  background-color: #5e42b0;
+  color: #fff;
+}
+.post-title-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 27px;
+}
+.number-post {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #000;
+  margin-right: 10px;
+}
+.number-post::after {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 4px;
+  background-color: #5e42b0;
+  border-radius: 2px;
+}
+.post-03::after {
+  background-color: #fff;
+}
+.title-post {
+  text-transform: uppercase;
+  color: #c1c1c1;
+  font-size: 23px;
+  font-weight: 700;
+}
+.post-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.players-title-container {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 240px;
+}
+.players-title {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #e7e7e7;
+}
+.players-imgbox {
+  position: absolute;
+  top: 80px;
+  left: 11px;
+}
+.players-post {
+  padding: 60px 20px 55px;
+}
+.players-post:nth-child(1) {
+  padding-top: 80px;
+  background-color: #fafafa;
+}
+.players-post:nth-child(2) {
+  background-color: #f5f4f9;
+}
+.players-post:nth-child(3) {
+  background-color: #090c35;
+  color: #fff;
+}
+.player-post-03 {
+  color: #8765dd;
+}
+.be-active {
+  position: relative;
+}
+.find-contact {
+  position: relative;
+}
+.be-active-img-container,
+.find-contact-img-container,
+.work-it-img-container {
+  position: relative;
+}
+.be-active-img,
+.find-contact-img,
+.work-it-img {
+  width: 100%;
+}
+.be-active-desc,
+.find-contact-desc,
+.work-it-desc {
+  padding: 30px 20px 75px;
+}
+.be-active-title,
+.find-contact-title,
+.work-it-title {
+  margin-bottom: 20px;
+}
+.number-post-rect {
+  bottom: -10px;
+  left: 20px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: #5e42b0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #f5f6f7;
+}
+.number-post-text {
+  display: block;
+  letter-spacing: 1px;
+}
+.number-post-text::after {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 4px;
+  background-color: #8f7bc8;
+  border-radius: 2px;
+}
+.be-active-link,
+.find-contact-link,
+.work-it-link {
+  color: #e7e7e7;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Footer */
+.footer {
+  height: 100vh;
+  position: relative;
+  background-color: #000000;
+  background-image: url(../img/game_767.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #0a0e34;
+  opacity: 0.9;
+}
+.footer-container {
+  position: relative;
+  z-index: 2;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+}
+.footer-title {    
+    text-align: center;
+    margin-bottom: 75px;    
+}
+.footer-title-1 {
+    font-size: 28px;
+    font-weight: 700;
+    color:  #fff;
+    text-transform: uppercase;
+    margin: 0;    
+}
+.footer-title-2 {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #9b8ec1;
+}
+.logo-btn {
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(#7756d7, #50379b);
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.logo-btn-link {
+    display: block;
+}
+.logo-btn-svg {
+    width: 60px;    
+    fill: #fff;
+    stroke-width: 5px;
+    stroke: #4c28b1;
+}
+.footer-container .logo {
+    margin: 95px auto 0;    
+}
