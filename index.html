@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Surface</title>
 </head>
@@ -36,7 +36,7 @@
                 </h1>
             </div>
             <div class="store-container">
-                <div class="store-ios">
+                <div class="store-btn-container">
                     <a href="#" class="store-link">
                         <svg class="store-ios-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170">
                             <path
@@ -45,7 +45,7 @@
                         <span class="store-text">Downloaded on the <span>App Store</span></span>
                     </a>
                 </div>
-                <div class="store-google">
+                <div class="store-btn-container">
                     <a href="#" class="store-link">
                         <svg class="store-google-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 505.499 505.499">
                             <path
@@ -60,9 +60,12 @@
         <section class="athlets">
             <div class="athlets-title-container">
                 <h2 class="athlets-title"><a href="#">Athlets</a></h2>
-                <div class="athlets-imgbox">
+                <picture class="athlets-imgbox">
+                    <source media="(max-width: 640px)" srcset="img/footballer_192.png">
+                    <source media="(min-width: 641px) and (max-width: 960px)" srcset="img/footballer_497.png">
+                    <source media="(min-width: 961px)" srcset="img/footballer_566.png">
                     <img src="img/footballer_192.png" alt="Footballer" class="athlets-img">
-                </div>
+                </picture>
             </div>
             <div class="athlets-posts">
                 <article class="athlets-post">
@@ -94,9 +97,12 @@
         <section class="players">
             <div class="players-title-container">
                 <h2 class="players-title"><a href="#">Players</a></h2>
-                <div class="players-imgbox">
-                    <img src="img/basketballer_302.png" alt="Player in jump" class="players-img">
-                </div>
+                <picture class="players-imgbox">
+                    <source media="(max-width: 640px)" srcset="img/basketballer_302.png">
+                    <source media="(min-width: 641px) and (max-width: 960px)" srcset="img/basketballer_436.png">
+                    <source media="(min-width: 961px)" srcset="img/basketballer_991.png">
+                    <img src="img/basketballer_302.png" alt="Player" class="players-img">
+                </picture>
             </div>
             <div class="players-posts">
                 <article class="players-post">
@@ -125,13 +131,15 @@
         </section>
         <section class="social-features">
             <article class="be-active">
-                <div class="be-active-img-container">
+                <picture class="be-active-img-container">
+                    <source media="(max-width: 640px)" srcset="img/be-active_640.jpg">
+                    <source media="(min-width: 641px) and (max-width: 960px)" srcset="img/be-active_960.jpg">
+                    <source media="(min-width: 961px)" srcset="img/be-active_1024.jpg">
                     <img src="img/be-active_640.jpg" alt="Sportman and phone" class="be-active-img">
                     <div class="number-post-rect">
                         <span class="number-post-text">01</span>
                     </div>
-                </div>
-
+                </picture>
                 <div class="be-active-desc">
                     <h3 class="be-active-title"><a href="#" class="be-active-link">Be active</a></h3>
                     <p class="be-active-text">Post videos with your skills,
@@ -140,12 +148,15 @@
                 </div>
             </article>
             <article class="find-contact">
-                <div class="find-contact-img-container">
+                <picture class="find-contact-img-container">
+                    <source media="(max-width: 640px)" srcset="img/find-contact_640.jpg">
+                    <source media="(min-width: 641px) and (max-width: 960px)" srcset="img/find-contact_960.jpg">
+                    <source media="(min-width: 961px)" srcset="img/find-contact_1024.jpg">
                     <img src="img/find-contact_640.jpg" alt="Sportman and phone" class="find-contact-img">
-                    <div class="number-post-rect">
+                    <div class="number-post-rect row-reverse">
                         <span class="number-post-text">02</span>
                     </div>
-                </div>
+                </picture>
 
                 <div class="find-contact-desc">
                     <h3 class="find-contact-title"><a href="#" class="find-contact-link">Find contact</a></h3>
@@ -153,16 +164,19 @@
                 </div>
             </article>
             <article class="work-it">
-                <div class="work-it-img-container">
+                <picture class="work-it-img-container">
+                    <source media="(max-width: 640px)" srcset="img/work-it_640.jpg">
+                    <source media="(min-width: 641px) and (max-width: 960px)" srcset="img/work-it_960.jpg">
+                    <source media="(min-width: 961px)" srcset="img/work-it_1024.jpg">
                     <img src="img/work-it_640.jpg" alt="Sportman and phone" class="work-it-img">
                     <div class="number-post-rect">
                         <span class="number-post-text">03</span>
                     </div>
-                </div>
+                </picture>
 
                 <div class="find-contact-desc">
                     <h3 class="work-it-title"><a href="#" class="work-it-link">Work it</a></h3>
-                    <p class="work-it-text">PEnjoy being a student athlete, the recruiting process can be overwhelming,
+                    <p class="work-it-text">Enjoy being a student athlete, the recruiting process can be overwhelming,
                         we want to make this enjoyable experience. </p>
                 </div>
             </article>
@@ -170,26 +184,28 @@
     </main>
     <footer class="footer">
         <div class="footer-container">
-            <div class="logo-btn">
-                <a href="#" class="logo-btn-link">
-                    <svg viewBox="0 0 288 264" class="logo-btn-svg">
-                        <g fill-rule="evenodd">
-                            <path
-                                d="M115.5 36.848v190.304L253.03 132 115.5 36.848zM282.112 142.28l-172 119c-8.29 5.736-19.612-.198-19.612-10.28V13c0-10.082 11.321-16.016 19.612-10.28l172 119c7.184 4.97 7.184 15.59 0 20.56z"
-                                fill-rule="nonzero" />
-                            <path
-                                d="M42.5 107h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zm0 70h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zM8 143h168a8 8 0 1 0 0-16H8a8 8 0 1 0 0 16z"
-                                fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                    </svg>
-                </a>
-            </div>
-            <div class="footer-title">
-                <h4 class="footer-title-1">Download App</h4>
-                <span class="footer-title-2">Show everyone what you can do!</span>
+            <div class="desktop-container">
+                <div class="logo-btn">
+                    <a href="#" class="logo-btn-link">
+                        <svg viewBox="0 0 288 264" class="logo-btn-svg">
+                            <g fill-rule="evenodd">
+                                <path
+                                    d="M115.5 36.848v190.304L253.03 132 115.5 36.848zM282.112 142.28l-172 119c-8.29 5.736-19.612-.198-19.612-10.28V13c0-10.082 11.321-16.016 19.612-10.28l172 119c7.184 4.97 7.184 15.59 0 20.56z"
+                                    fill-rule="nonzero" />
+                                <path
+                                    d="M42.5 107h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zm0 70h107a8 8 0 1 0 0-16h-107a8 8 0 1 0 0 16zM8 143h168a8 8 0 1 0 0-16H8a8 8 0 1 0 0 16z"
+                                    fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer-title">
+                    <h4 class="footer-title-1">Download App</h4>
+                    <span class="footer-title-2">Show everyone what you can do!</span>
+                </div>
             </div>
             <div class="store-container">
-                <div class="store-ios">
+                <div class="store-btn-container">
                     <a href="#" class="store-link">
                         <svg class="store-ios-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170">
                             <path
@@ -198,7 +214,7 @@
                         <span class="store-text">Downloaded on the <span>App Store</span></span>
                     </a>
                 </div>
-                <div class="store-google">
+                <div class="store-btn-container">
                     <a href="#" class="store-link">
                         <svg class="store-google-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 505.499 505.499">
                             <path
@@ -225,7 +241,7 @@
                     </svg>
                 </a>
             </div>
-            </header>
+        </div>
 </body>
 
 </html>
