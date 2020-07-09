@@ -10,6 +10,12 @@ ul {
   margin: 0;
   padding: 0;
 }
+body {
+  min-width: 320px;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
 a,
 a:active {
   text-decoration: none;
@@ -20,12 +26,7 @@ a:active {
 li {
   list-style-type: none;
 }
-/* .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  clip: rect(1px, 1px, 1px, 1px);
-} */
+
 
 /* Header */
 .header {
@@ -49,22 +50,24 @@ li {
 .header-container {
   position: relative;
   z-index: 2;
-  width: 87.5%;
+  width: 280px;
+  height: 100vh;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 30px;
-  padding-bottom: 85px;
+  /* padding-top: 30px; */
+  padding-top: 5.8%; 
 }
 .logo {
   fill: #fff;
   width: 135px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 135px;
+  /* margin-bottom: 135px; */
+  margin-bottom: 23.76%;
 }
-.main-title {
+/* .main-title {
   margin-bottom: 85px;
-}
+} */
 .title {
   color: #fff;
   text-transform: uppercase;
@@ -74,13 +77,16 @@ li {
   flex-wrap: wrap;
 }
 .title-p1 {
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
+  margin-bottom: 2.64%;
 }
 .title-p2 {
   margin-left: 45px;
 }
 .store-container {
+  position: absolute;
   width: 280px;
+  bottom: 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -122,7 +128,7 @@ li {
   font-weight: 700;
 }
 
-/* Main content */
+/* Main content ---------------------------------------*/
 .athlets-title-container {
   position: relative;
   padding-left: 20px;
@@ -285,7 +291,7 @@ li {
   font-weight: 700;
 }
 
-/* Footer */
+/* Footer ----------------------------------*/
 .footer {
   position: relative;
   background-color: #000000;
@@ -307,11 +313,12 @@ li {
 .footer-container {
   position: relative;
   z-index: 2;
+  height: 100vh;
   width: 280px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 100px;
-  padding-bottom: 10px;
+  /* padding-top: 100px;  */
+  padding-top: 17.6%;
 }
 .footer-title {
   text-align: center;
@@ -340,7 +347,8 @@ li {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  margin-bottom: 8.8%;
 }
 .logo-btn-link {
   display: block;
@@ -352,21 +360,39 @@ li {
   stroke: #4c28b1;
 }
 .footer-container .store-container {
-  margin-bottom: 82px;
+  position: absolute;
+  bottom: 22.71%;
 }
-.footer-container .logo {
-  padding: 0;
-  margin: 0 auto;
-}
+.footer-container .logo {  
+  position: absolute;
+  left: 50%;
+  transform: translateX(calc(-135px / 2));
+  bottom: 1.76%;
+  margin-bottom: 0;
 
+}
+@media (max-width: 640px) and (orientation: landscape) {
+  .logo {
+    margin-bottom: 5%;
+  }
+  .logo-btn {
+    margin-bottom: 3%;
+  }
+  .footer-container .store-container {    
+    bottom: 17%;
+}
+}
 @media (min-width: 641px) and (max-width: 960px) {
   .header {
     background-image: url(../img/football_1280.jpg);
   }
   .header-container {
-    width: 704px;
+    min-width: 641px;
+    max-width: 960px;
+    /* width: 704px; */
     padding-top: 38px;
     padding-bottom: 90px;
+    height: initial;
   }
   .main-title {
     margin-left: 55px;
@@ -380,7 +406,7 @@ li {
     margin-bottom: 0;
   }
   .title-p2 {
-    margin-left: 105px;
+    margin-left: 10.93%;
     margin-top: 0;
   }
   .logo {
@@ -388,7 +414,8 @@ li {
     margin-bottom: 158px;
   }
   .store-container {
-    width: 656px;
+    min-width: 641px;
+    max-width: 960px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -526,9 +553,20 @@ li {
     background-image: url(../img/game_1280.jpg);
   }
   .footer-container {
-    width: 704px;
+    min-width: 641px;
+    max-width: 960px;
     padding-top: 125px;
-    padding-bottom: 21px;
+    padding-bottom: 25px;
+    height: initial;
+    width: initial;    
+  }
+  .footer-container .store-container {
+    position: initial;
+    margin-bottom: 57px;
+  }
+  .footer-container .logo {
+    position: initial;
+    transform: initial;
   }
   .logo-btn {
     width: 135px;
@@ -546,6 +584,10 @@ li {
     font-size: 80px;
     line-height: 1.3;
   }
+  .footer-title-2 {
+    font-size: 36px;
+  }
+
 }
 @media (min-width: 961px) {
   .header {
