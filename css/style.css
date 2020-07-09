@@ -610,13 +610,19 @@ li {
   .header {
     background-image: url(../img/football_1920.jpg);
   }
+  .header-container {
+    height: initial;
+    width: initial;
+    padding-top: 45px;
+    padding-bottom: 110px;
+    padding-left: 10%;
+  }
   .main-title {
-    min-width: 961px;
-    max-width: 1532px;
     margin-left: auto;
     margin-right: auto;
   }
   .title {
+    position: initial;
     font-size: 90px;
     line-height: 1.1;
     margin-bottom: 207px;
@@ -628,10 +634,13 @@ li {
     margin-left: 450px;
   }
   .logo {
+    position: initial;
+    transform: initial;
     width: 205px;
-    margin-bottom: 260px;
+    margin-bottom: 270px;
   }
   .store-container {
+    position: initial;
     width: 670px;
     flex-direction: row;
     justify-content: space-between;
@@ -669,14 +678,14 @@ li {
     padding-left: 52%;
   }
   .athlets-post { 
-    padding-left: 1009px;    
+    padding-left: 52%;    
     padding-top: 50px;
     padding-bottom: 50px;
   }
   .athlets-imgbox {
     top: 20px;
-    left: 396px;
-    transform: initial;
+    left: 20%;
+    transform: translateX(calc(-566px / 2));
   }
   .athlets-post:nth-child(1) {
     background-color: #fff;
@@ -709,13 +718,19 @@ li {
     margin-bottom: 21px;
   }
   .post-text {
+    width: initial;
     font-size: 20px;
     line-height: 28px;
   }
+  .players {
+    position: relative;
+    overflow-x: hidden;
+  }
   .players-title-container {
-    padding-left: 190px;
+    position: initial;
+    padding-left: 10%;
     padding-top: 92px;
-    margin-bottom: 75px;
+    margin-bottom: 75px;    
   }
   .players-title {
     font-size: 80px;
@@ -724,31 +739,31 @@ li {
   .players-imgbox {
     position: absolute;
     top: 20px;
-    left: 812px;
+    left: 42.29%;
     transform: initial;
   }
   .players-post {
-    padding-left: 190px;
+    padding-left: 10%;
     padding-top: 50px;
     padding-bottom: 55px;
   }
-  .post-text {
-    width: 755px;
+  .players-post .post-text {
+    width: 60%;
   }
   .players-post:nth-child(1) {
     background-color: #fff;
     padding-top: 0;
   }
   .number-post-rect {
-    bottom: 33%;
+    top: 21%;
     left: initial;
-    right: -85px;
-    width: 170px;
-    height: 160px;
+    right: calc(-8.85vmax / 2);
+    width: 8.85vmax;
+    height: 8.33vmax;
     font-size: 24px;
   }
   .row-reverse {
-    left: -85px;
+    left: calc(-8.85vmax / 2);
   }
   .number-post-text::after {
     width: 26px;
@@ -771,18 +786,16 @@ li {
   .be-active-desc,
   .work-it-desc {
     flex: 0 0 50%;
-    padding-left: 128px;
-    padding-right: 190px;
-    padding-top: 233px;
-    padding-bottom: 240px;
+    padding-left: 6.71%;
+    padding-top: 13.64%;
+    padding-bottom: 13%;
     box-sizing: border-box;
   }
   .find-contact-desc {
     flex: 0 0 50%;
-    padding-left: 190px;
-    padding-right: 128px;
-    padding-top: 233px;
-    padding-bottom: 240px;
+    padding-left: 6.71%;
+    padding-top: 13.64%;
+    padding-bottom: 13%;
     box-sizing: border-box;
   }
   .be-active-img,
@@ -794,31 +807,30 @@ li {
   .be-active-link,
   .find-contact-link,
   .work-it-link {
-    font-size: 80px;
+    font-size: 4.17vmax;
   }
   .be-active-text,
   .find-contact-text,
   .work-it-text {
-    width: 652px;
-    font-size: 24px;
+    width: 100%;
+    font-size: 1.25vmax;
     line-height: 28px;
   }
   .footer-container {
-    min-width: 961px;
-    max-width: 1532px;
     padding-top: 228px;
     padding-bottom: 50px;
+    height: initial;
+    width: 100%;
   }
   .desktop-container {
-    width: 866px;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
     margin-bottom: 152px;
   }
   .logo-btn {
+    position: initial;
+    transform: initial;
     width: 130px;
     height: 138px;
     background: linear-gradient(#7756d7, #50379b);
@@ -838,10 +850,18 @@ li {
     font-size: 30px;
   }
   .footer-title {
+    position: initial;
+    transform: initial;
     text-align: left;
     margin-bottom: 0;
+    width: initial;
   }
   .footer-container .store-container {
+    position: initial;
     margin-bottom: 262px;
+  }
+  .footer-container .logo {
+    position: initial;
+    transform: initial;
   }
 }
