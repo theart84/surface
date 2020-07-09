@@ -54,21 +54,22 @@ li {
   height: 100vh;
   margin-left: auto;
   margin-right: auto;
-  /* padding-top: 30px; */
-  padding-top: 5.8%; 
 }
 .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(calc(-135px / 2));
+  top: 5.8%;
   fill: #fff;
   width: 135px;
   margin-left: auto;
   margin-right: auto;
-  /* margin-bottom: 135px; */
   margin-bottom: 23.76%;
 }
-/* .main-title {
-  margin-bottom: 85px;
-} */
+
 .title {
+  position: absolute;
+  top: 36%;
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
@@ -77,7 +78,6 @@ li {
   flex-wrap: wrap;
 }
 .title-p1 {
-  /* margin-bottom: 15px; */
   margin-bottom: 2.64%;
 }
 .title-p2 {
@@ -317,12 +317,14 @@ li {
   width: 280px;
   margin-left: auto;
   margin-right: auto;
-  /* padding-top: 100px;  */
-  padding-top: 17.6%;
 }
 .footer-title {
+  position: absolute;
+  width: 280px;
+  top: 40.24%;
+  left: 50%;
+  transform: translateX(calc(-280px / 2));
   text-align: center;
-  margin-bottom: 70px;
 }
 .footer-title-1 {
   font-size: 28px;
@@ -338,6 +340,10 @@ li {
   color: #9b8ec1;
 }
 .logo-btn {
+  position: absolute;
+  top: 17.6%;
+  left: 50%;
+  transform: translateX(calc(-72px / 2));
   width: 72px;
   height: 72px;
   background: linear-gradient(#7756d7, #50379b);
@@ -345,10 +351,6 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  /* margin-bottom: 50px; */
-  margin-bottom: 8.8%;
 }
 .logo-btn-link {
   display: block;
@@ -365,6 +367,7 @@ li {
 }
 .footer-container .logo {  
   position: absolute;
+  top: initial;
   left: 50%;
   transform: translateX(calc(-135px / 2));
   bottom: 1.76%;
@@ -372,11 +375,14 @@ li {
 
 }
 @media (max-width: 640px) and (orientation: landscape) {
-  .logo {
-    margin-bottom: 5%;
+  .title {
+    top: 19%;
   }
   .logo-btn {
-    margin-bottom: 3%;
+    top: 5%
+  }
+  .footer-title {
+    top: 33%;
   }
   .footer-container .store-container {    
     bottom: 17%;
@@ -389,16 +395,20 @@ li {
   .header-container {
     min-width: 641px;
     max-width: 960px;
-    /* width: 704px; */
     padding-top: 38px;
     padding-bottom: 90px;
     height: initial;
   }
-  .main-title {
+  .logo {
+    position: initial;
+    transform: initial;
+  }
+  .main-title {    
     margin-left: 55px;
     margin-bottom: 307px;
   }
   .title {
+    position: initial;
     font-size: 64px;
     line-height: 1.2;
   }
@@ -569,16 +579,23 @@ li {
     transform: initial;
   }
   .logo-btn {
+    position: initial;
+    transform: initial;
     width: 135px;
     height: 135px;
     border-radius: 14px;
     margin-bottom: 56px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .logo-btn-svg {
     width: 105px;
   }
   .footer-title {
+    position: initial;
+    transform: initial;
     margin-bottom: 280px;
+    width: initial;
   }
   .footer-title-1 {
     font-size: 80px;
