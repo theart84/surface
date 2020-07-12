@@ -722,7 +722,7 @@ li {
   }
   .players {
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
   }
   .players-title-container {
     position: initial;
