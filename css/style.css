@@ -746,11 +746,11 @@ li {
     padding-bottom: 55px;
   }
   .players-post .post-text {
-    width: 60%;
+    width: 50%;
   }
   .players-post:nth-child(1) {
     background-color: #fff;
-    padding-top: 0;
+    padding-top: 10px;
   }
   .number-post-rect {
     top: 21%;
