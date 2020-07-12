@@ -615,11 +615,9 @@ li {
     width: initial;
     padding-top: 45px;
     padding-bottom: 110px;
-    padding-left: 10%;
   }
   .main-title {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10%;
   }
   .title {
     position: initial;
@@ -863,5 +861,29 @@ li {
   .footer-container .logo {
     position: initial;
     transform: initial;
+  }
+}
+@media (min-width: 1920px) {
+  .be-active-link,
+  .find-contact-link,
+  .work-it-link {
+    font-size: 80px;
+  }
+  .be-active-text,
+  .find-contact-text,
+  .work-it-text {
+    font-size: 24px;
+  }
+  .number-post-rect {
+    right: 0;
+    transform: translateX(85px);
+    width: 170px;
+    height: 160px;
+  }
+  .find-contact .number-post-rect {
+    left: 0;
+    width: 170px;
+    height: 160px;
+    transform: translateX(-85px);
   }
 }
